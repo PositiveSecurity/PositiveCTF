@@ -2,15 +2,16 @@
 pragma solidity ^0.8.25;
 
 import "./BaseTest.t.sol";
-import "src/8_LendingPool/LendingPool.sol";
+import "src/02_PrivateRyan/PrivateRyan.sol";
 
-// forge test --match-contract LendingPoolTest -vvvv
-contract LendingPoolTest is BaseTest {
-    LendingPool instance;
+// forge test --match-contract PrivateRyanTest -vvvv
+contract PrivateRyanTest is BaseTest {
+    PrivateRyan instance;
 
     function setUp() public override {
         super.setUp();
-        instance = new LendingPool{value: 0.1 ether}();
+        instance = new PrivateRyan{value: 0.01 ether}();
+        vm.roll(48743985);
     }
 
     function testExploitLevel() public {

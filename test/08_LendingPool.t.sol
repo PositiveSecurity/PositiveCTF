@@ -2,16 +2,15 @@
 pragma solidity ^0.8.25;
 
 import "./BaseTest.t.sol";
-import "src/1_Azino777/Azino777.sol";
+import "src/08_LendingPool/LendingPool.sol";
 
-// forge test --match-contract Azino777Test -vvvv
-contract Azino777Test is BaseTest {
-    Azino777 instance;
+// forge test --match-contract LendingPoolTest -vvvv
+contract LendingPoolTest is BaseTest {
+    LendingPool instance;
 
     function setUp() public override {
         super.setUp();
-        instance = new Azino777{value: 0.01 ether}();
-        vm.roll(43133);
+        instance = new LendingPool{value: 0.1 ether}();
     }
 
     function testExploitLevel() public {

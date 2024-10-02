@@ -2,15 +2,15 @@
 pragma solidity ^0.8.25;
 
 import "./BaseTest.t.sol";
-import "src/2_PrivateRyan/PrivateRyan.sol";
+import "src/03_WheelOfFortune/WheelOfFortune.sol";
 
-// forge test --match-contract PrivateRyanTest -vvvv
-contract PrivateRyanTest is BaseTest {
-    PrivateRyan instance;
+// forge test --match-contract WheelOfFortuneTest -vvvv
+contract WheelOfFortuneTest is BaseTest {
+    WheelOfFortune instance;
 
     function setUp() public override {
         super.setUp();
-        instance = new PrivateRyan{value: 0.01 ether}();
+        instance = new WheelOfFortune{value: 0.01 ether}();
         vm.roll(48743985);
     }
 

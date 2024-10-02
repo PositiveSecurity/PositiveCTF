@@ -2,7 +2,7 @@
 pragma solidity ^0.8.25;
 
 import "./BaseTest.t.sol";
-import "src/7_Lift/Lift.sol";
+import "src/07_Lift/Lift.sol";
 
 // forge test --match-contract LiftTest
 contract LiftTest is BaseTest {

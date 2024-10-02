@@ -2,7 +2,7 @@
 pragma solidity ^0.8.25;
 
 import "./BaseTest.t.sol";
-import "src/4_FindMe/FindMe.sol";
+import "src/04_FindMe/FindMe.sol";
 
 // forge test --match-contract FindMeTest -vvvv
 contract FindMeTest is BaseTest {

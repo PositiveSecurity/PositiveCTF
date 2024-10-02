@@ -2,16 +2,17 @@
 pragma solidity ^0.8.25;
 
 import "./BaseTest.t.sol";
-import "src/5_CallMeMaybe/CallMeMaybe.sol";
+import "src/06_PredictTheFuture/PredictTheFuture.sol";
 
-// forge test --match-contract CallMeMaybeTest -vvvv
-contract CallMeMaybeTest is BaseTest {
-    CallMeMaybe instance;
+// forge test --match-contract PredictTheFutureTest -vvvv
+contract PredictTheFutureTest is BaseTest {
+    PredictTheFuture instance;
 
     function setUp() public override {
         super.setUp();
-        payable(user1).transfer(0.01 ether);
-        instance = new CallMeMaybe{value: 0.01 ether}();
+        instance = new PredictTheFuture{value: 0.01 ether}();
+
+        vm.roll(143242);
     }
 
     function testExploitLevel() public {

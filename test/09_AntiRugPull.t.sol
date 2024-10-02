@@ -2,8 +2,8 @@
 pragma solidity ^0.8.25;
 
 import "./BaseTest.t.sol";
-import "../src/9_AntiRugPull/AntiRugPull.sol";
-import "../src/9_AntiRugPull/MintableERC20.sol";
+import "../src/09_AntiRugPull/AntiRugPull.sol";
+import "../src/09_AntiRugPull/MintableERC20.sol";
 
 // forge test --match-contract AntiRugPullTest
 contract AntiRugPullTest is BaseTest {
