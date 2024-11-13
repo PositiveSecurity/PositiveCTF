@@ -26,7 +26,6 @@ contract AntiRugPullTest is BaseTest {
     }
 
     function checkSuccess() internal override {
-        vm.startPrank(address(this));
         token.approve(address(instance), 10 ** 17);
         instance.deposit(10 ** 17);
 

@@ -36,6 +36,7 @@ contract DAOTest is BaseTest {
     }
 
     function checkSuccess() internal view override {
+        assertTrue(instance.owner() != owner, "Solution is not solving the level");
         assertTrue(address(instance).balance == 0, "Solution is not solving the level");
     }
 }

@@ -11,8 +11,11 @@ contract WrappedEtherTest is BaseTest {
     function setUp() public override {
         super.setUp();
 
+        vm.startPrank(owner);
+        vm.deal(owner, 0.09 ether);
         instance = new WrappedEther();
-        instance.deposit{value: 0.09 ether}(address(this));
+        instance.deposit{value: 0.09 ether}(owner);
+        vm.stopPrank();
     }
 
     function testExploitLevel() public {
