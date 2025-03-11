@@ -10,7 +10,7 @@ contract CallMeMaybeTest is BaseTest {
 
     function setUp() public override {
         super.setUp();
-        payable(user1).transfer(0.01 ether);
+        payable(player).transfer(0.01 ether);
         instance = new CallMeMaybe{value: 0.01 ether}();
     }
 

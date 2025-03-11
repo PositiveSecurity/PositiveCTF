@@ -14,7 +14,7 @@ contract AntiRugPullTest is BaseTest {
         super.setUp();
 
         token = new MintableERC20("TOKEN", "TOKEN", 10 ether);
-        token.transfer(user1, 9 ether);
+        token.transfer(player, 9 ether);
 
         instance = new Vault(address(token), owner);
     }
