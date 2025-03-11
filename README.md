@@ -13,6 +13,8 @@ Clone the repository and solve locally, a separate test is made for each problem
 ```sh
 git clone https://github.com/PositiveSecurity/PositiveCTF.git
 
+cd PositiveCTF
+
 forge install
 ```
 
