@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// We added a private seed, nobody will ever learn it!
-
 contract PrivateRyan {
     uint256 constant FACTOR = 1157920892373161954135709850086879078532699843656405640394575840079131296399;
 

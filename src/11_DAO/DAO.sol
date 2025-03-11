@@ -1,9 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// In the very first version of the DAO community, FakeDAO, the owner fixed the bug.
-// However, it seems that the protocol is still vulnerable...
-
 import {OffchainCheckOwner} from "./OffchainCheckOwner.sol";
 
 contract DAO is OffchainCheckOwner {

@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.12;
-
-// The key to the lock of this contract is hidden in one of its variables. To pass the level, you need to unlock the contract.
+pragma solidity ^0.8.25;
 
 contract FindMe {
     bool public isUnlock;

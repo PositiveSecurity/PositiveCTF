@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.12;
-
-// Guess number before it's generated and you will receive all the funds from contract.
+pragma solidity ^0.8.25;
 
 contract PredictTheFuture {
     address public player;

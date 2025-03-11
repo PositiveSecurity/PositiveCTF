@@ -1,9 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// Ahoy, landlubber! The pirate ship "Black Pearl" is at anchor.
-// Make it pull the anchor and haul the black jack flag to set off for the search of treasures.
-
 contract PirateShip {
     address public anchor = address(0x0);
     bool public blackJackIsHauled = false;

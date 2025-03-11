@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// After two hacks, the DAO owner hasn't learned a thing...
-
 import {OffchainCheckOwner} from "./OffchainCheckOwner.sol";
 
 contract DAO2 is OffchainCheckOwner {

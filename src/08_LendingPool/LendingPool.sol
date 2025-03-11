@@ -1,9 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// This lending protocol allows deposits, withdrawal them at any time, and also flash loans.
-// Your goal is to steal all the ether from contract.
-
 import "@openzeppelin/contracts/utils/Address.sol";
 
 interface IFlashLoanReceiver {

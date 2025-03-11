@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// The goal of this level is to win the lottery and hit the jackpot!
-
 contract Azino777 {
     uint256 constant FACTOR = 1157920892373161954235709850086879078532699846656405640394575840079131296399;
 

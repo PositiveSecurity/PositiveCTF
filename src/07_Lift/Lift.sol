@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.12;
-
-// This lift does't want to go to the top floor. Make him do it :)
+pragma solidity ^0.8.25;
 
 interface House {
     function isTopFloor(uint256) external returns (bool);

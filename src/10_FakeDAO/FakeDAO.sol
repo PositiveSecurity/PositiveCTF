@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// This is the very first version of DAO, it will be fixed soon, have time to take all the money of the contract.
-
 import {OffchainCheckOwner} from "./OffchainCheckOwner.sol";
 
 contract FakeDAO is OffchainCheckOwner {

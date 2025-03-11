@@ -1,9 +1,6 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
 
-// We have developed a wrapped ether contract so that it can be handled in Defi protocols like ERC20 tokens.
-// Will you be able to find a vulnerability and take all the funds out of the contract?
-
 contract WrappedEther {
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;

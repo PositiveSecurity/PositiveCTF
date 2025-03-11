@@ -4,18 +4,24 @@ A set of tasks for cracking implementations of smart-contracts with typical vuln
 
 ## Play
 
-Visit [positive.com](https://www.positive.com/ctf)
+Visit [positive.com](https://www.positive.com/ctf) (soon)
 
 OR
 
 Clone the repository and solve locally, a separate test is made for each problem
 
-<details>
-  <summary>Hints</summary>
-  
-In some cases it may be necessary to write part of the exploit in the `setUp()` function, due to the peculiarities of processing the `SELFDESTRUCT` command in Foundry. 
-  
-</details>
+```sh
+git clone https://github.com/PositiveSecurity/PositiveCTF.git
+
+forge install
+```
+
+## Important
+
+- In some cases it may be necessary to write part of the exploit in the `setUp()` function, due to the peculiarities of processing the `SELFDESTRUCT` command in Foundry
+- Some tasks require fork testing (`--fork-url`)
+- There are two roles in `BaseTest.t.sol`, sometimes it is required to send transactions from `player`, you cannot send transactions from `owner`
+- It is possible to manipulate the time of the blockchain within reasonable limits
 
 ## Disclaimer
 
